@@ -10,7 +10,7 @@ from zipfile import ZipFile
 from docx import Document
 
 
-st.title('Wordコメント作者名の削除・変更\nDelete or modify the author name from comments in a docx file.')
+st.title('Wordコメント作者名の削除・変更')
 
 st.write("\n")
 st.markdown(f"Wordファイルに含まれるコメントから、作者名を削除・変更します。<br>This web service deletes or modifies the author name from comments in a docx file.", unsafe_allow_html=True)
