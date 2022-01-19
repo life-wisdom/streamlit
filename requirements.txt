@@ -2,4 +2,3 @@ streamlit
 Pillow
 python-docx
 pikepdf
-tempfile
