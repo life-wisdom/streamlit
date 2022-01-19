@@ -13,7 +13,7 @@ from docx import Document
 st.title('Wordコメント作者名の削除・変更')
 
 st.write("\n")
-st.markdown(f"Wordファイルに含まれるコメントから、作者名を削除・変更します。<br>This web service deletes or modifies the author name from comments in a docx file.", unsafe_allow_html=True)
+st.markdown(f"Wordファイルに含まれるコメントから、作者名を削除・変更します。<br>This web service deletes or modifies the author name of comments in a docx file.", unsafe_allow_html=True)
 st.markdown(f"下欄に変更後の名前を入力してください（作者名を削除する場合は空欄）。<br>Input the name to which you want to change the author name below. Leave it blank if you want to delete the author name.", unsafe_allow_html=True)
 
 user_input = st.text_input("作者名（author name）", "Anonymous Author")
@@ -21,7 +21,7 @@ user_input = st.text_input("作者名（author name）", "Anonymous Author")
 
 st.write("\n")
 
-st.markdown(f"Wordファイル（docx）をアップロートしてください。処理終了後、ダウンロードリンクが表示されます。<br>Upload a Word (docx) flie below. Download link will show up after the process compeletes.", unsafe_allow_html=True)
+st.markdown(f"Wordファイル（docx）をアップロートしてください。処理終了後、ダウンロードリンクが表示されます。<br>Upload a Word (docx) flie below. Download link will show up after the process completes.", unsafe_allow_html=True)
 uploaded_file = st.file_uploader('下欄にドラッグ＆ドロップできます。(Drop a file below.) ', type='docx')
 
 
