@@ -18,7 +18,7 @@ st.markdown(f"下欄に変更後の名前を入力してください（作者名
 
 user_input = st.text_input("作者名（author name）", "Anonymous Author")
 try:
-    user_input = re.sub(r"[<>\\]", "", repr(user_input))
+    user_input = re.sub(r"[<>\\]", "", repr(user_input)) # remove special letters that may cause a problem
 except:
     pass
 
