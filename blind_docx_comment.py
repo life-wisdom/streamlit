@@ -17,6 +17,10 @@ st.markdown(f"Wordファイルに含まれるコメントから、作者名を�
 st.markdown(f"下欄に変更後の名前を入力してください（作者名を削除する場合は空欄）。<br>Input the name to which you want to change the author name below. Leave it blank if you want to delete the author name.", unsafe_allow_html=True)
 
 user_input = st.text_input("作者名（author name）", "Anonymous Author")
+try:
+    user_input = re.sub(r"[<>\\]", "", repr(user_input))
+except:
+    pass
 
 
 st.write("\n")
