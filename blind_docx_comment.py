@@ -84,3 +84,7 @@ if uploaded_file is not None:
     except Exception as e:
         st.markdown(f"<b>Error: {str(e)}</b>", unsafe_allow_html=True)
 
+
+st.write("詳しい使い方は以下のページを参照してください。\nPlease refer to the following page for the usage.\n")
+link = '[平凡父さんの生活／The life of a little father](https://life-wisdom.xyz/20220121/1950/)'
+st.markdown(link, unsafe_allow_html=True)
