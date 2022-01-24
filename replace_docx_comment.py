@@ -72,7 +72,7 @@ if uploaded_file is not None:
                         
                         comments = infile.read()
                         comments_new = str()
-                        comments_new += re.sub(r'w:author="[^"]*{user_input1}[^"]*"', f"w:author=\"{user_input2}\"", comments.decode())
+                        comments_new += re.sub(f'w:author="{user_input1}"', f'w:author="{user_input2}"', comments.decode())
                         outzip.writestr(inzipinfo.filename, comments_new)
 
                     else: # Other file, dont want to modify => just copy it
