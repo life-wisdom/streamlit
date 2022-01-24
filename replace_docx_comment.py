@@ -23,7 +23,7 @@ st.markdown(link, unsafe_allow_html=True)
 st.write("\n\n")
 st.markdown(f"下欄に変更したいコメント作者の名前を入力してください。<br>Input the name from which you want to change the author name below.", unsafe_allow_html=True)
 
-user_input1 = st.text_input("作者名（author name）", "")
+user_input1 = st.text_input("現在の作者名（current author name）", "")
 try:
     user_input1 = re.sub(r"[<>\\]", "", repr(user_input)) # remove special letters that may cause a problem
 except:
@@ -31,7 +31,7 @@ except:
 
 st.markdown(f"下欄に変更後の名前を入力してください（作者名を削除する場合は空欄）。<br>Input the name to which you want to change the author name below. Leave it blank if you want to delete the author name.", unsafe_allow_html=True)
 
-user_input2 = st.text_input("作者名（author name）", "Anonymous Author")
+user_input2 = st.text_input("変更後の作者名（new author name）", "Anonymous Author")
 try:
     user_input2 = re.sub(r"[<>\\]", "", repr(user_input)) # remove special letters that may cause a problem
 except:
