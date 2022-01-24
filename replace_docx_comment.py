@@ -15,10 +15,6 @@ st.title('Wordコメント作者名の置換')
 st.write("\n")
 st.markdown(f"Wordファイルに含まれるコメントから、作者名を置換します。<br>This web service replaces the author name of comments in a docx file.", unsafe_allow_html=True)
 
-#st.markdown(f"詳しい使い方は以下のページを参照してください。<br>Please refer to the following page for the usage.", unsafe_allow_html=True)
-#link = '[平凡父さんの生活／The life of a little father](https://life-wisdom.xyz/20220121/1950/)'
-#st.markdown(link, unsafe_allow_html=True)
-
 st.write("\n\n")
 st.markdown(f"下欄に変更したいコメント作者の名前を入力してください。<br>Input the name from which you want to change the author name below.", unsafe_allow_html=True)
 
