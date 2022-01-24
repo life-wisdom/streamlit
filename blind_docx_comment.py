@@ -14,6 +14,13 @@ st.title('Wordコメント作者名の削除・変更')
 
 st.write("\n")
 st.markdown(f"Wordファイルに含まれるコメントから、作者名を削除・変更します。<br>This web service deletes or modifies the author name of comments in a docx file.", unsafe_allow_html=True)
+
+st.write("詳しい使い方は以下のページを参照してください。\nPlease refer to the following page for the usage.\n")
+link = '[平凡父さんの生活／The life of a little father](https://life-wisdom.xyz/20220121/1950/)'
+st.markdown(link, unsafe_allow_html=True)
+
+
+st.write("\n")
 st.markdown(f"下欄に変更後の名前を入力してください（作者名を削除する場合は空欄）。<br>Input the name to which you want to change the author name below. Leave it blank if you want to delete the author name.", unsafe_allow_html=True)
 
 user_input = st.text_input("作者名（author name）", "Anonymous Author")
@@ -83,8 +90,3 @@ if uploaded_file is not None:
 
     except Exception as e:
         st.markdown(f"<b>Error: {str(e)}</b>", unsafe_allow_html=True)
-
-
-st.write("詳しい使い方は以下のページを参照してください。\nPlease refer to the following page for the usage.\n")
-link = '[平凡父さんの生活／The life of a little father](https://life-wisdom.xyz/20220121/1950/)'
-st.markdown(link, unsafe_allow_html=True)
