@@ -15,7 +15,7 @@ st.title('Wordコメント作者名の削除・変更')
 st.write("\n")
 st.markdown(f"Wordファイルに含まれるコメントから、作者名を削除・変更します。<br>This web service deletes or modifies the author name of comments in a docx file.", unsafe_allow_html=True)
 
-st.markdown(f"詳しい使い方は以下のページを参照してください。<br>Please refer to the following page for the usage.")
+st.markdown(f"詳しい使い方は以下のページを参照してください。<br>Please refer to the following page for the usage.", unsafe_allow_html=True)
 link = '[平凡父さんの生活／The life of a little father](https://life-wisdom.xyz/20220121/1950/)'
 st.markdown(link, unsafe_allow_html=True)
 
